@@ -6,6 +6,9 @@ import CurrentWeather from './components/current-weather/current-weather';
 import { WEATHER_API_URL } from './api';
 import { API_KEY } from './api';
 import Forecast from './components/forecast/forecast';
+// require('dotenv').config()
+
+
 
 function App() {
 
@@ -15,6 +18,7 @@ function App() {
 
   const handleOnSearchChange = (searchData) => {
       const [lat, lon] = searchData.value.split(" ")
+      console.log(API_KEY)
 
       const currentWeatherFetch = fetch(`${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`)
       const forecastFetch = fetch(`${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`)

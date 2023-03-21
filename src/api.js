@@ -1,4 +1,7 @@
 
+// require('dotenv').config()
+
+
 export const geoApiOptions = {
 	method: 'GET',
 	headers: {
@@ -11,5 +14,4 @@ export const geoApiOptions = {
     export const GEO_URL_API = 'https://wft-geo-db.p.rapidapi.com/v1/geo'
 	export const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5"
 
-    export const API_KEY = "fb6618a6146224a1d2ee32445df61875"
-
+    export const API_KEY = process.env.REACT_APP_API_KEY
