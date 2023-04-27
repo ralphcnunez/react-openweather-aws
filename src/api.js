@@ -1,5 +1,4 @@
 
-// require('dotenv').config()
 
 
 export const geoApiOptions = {
@@ -15,3 +14,5 @@ export const geoApiOptions = {
 	export const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5"
 
     export const API_KEY = process.env.REACT_APP_API_KEY
+    export const AWS_ACCESS_KEY = process.env.REACT_APP_AWS_ACCESS_KEY
+    export const AWS_SECRET_KEY= process.env.REACT_APP_AWS_SECRET_KEY

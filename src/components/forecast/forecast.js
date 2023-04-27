@@ -9,10 +9,15 @@ import {
 import "./forecast.css";
 
 const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const AWS = require("aws-sdk");
 
-const Forecast = ({ data }) => {
+const Forecast =  ({ data }) => {
   const dayInAWeek = new Date().getDay();
   const forecastDays = WEEK_DAYS.slice(dayInAWeek, WEEK_DAYS.length).concat(WEEK_DAYS.slice(0, dayInAWeek));
+
+
+
+
   
   return (
     <>
